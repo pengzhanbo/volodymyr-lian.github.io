@@ -205,12 +205,15 @@ a {
   height: 110px;
   position: absolute;
   width: 100%;
-  background: #4d4d4d;
+  background: #16a085;
 }
 #container #mobile-nav .overlay.fixed {
   position: fixed;
   height: 42px;
   z-index: 99;
+}
+#container #mobile-nav .intrude-less {
+  background: #1abc9c;
 }
 #container #mobile-nav #header {
   padding: 10px 0 0 0;
@@ -233,7 +236,7 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: #fff;
+  background: #1abc9c;
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -246,7 +249,7 @@ a {
 #container .left-col .overlay {
   width: 100%;
   height: 180px;
-  background-color: #000;
+  background-color: #16a085;
   position: absolute;
   opacity: 0.7;
 }
@@ -482,10 +485,10 @@ a {
   width: 100%;
 }
 #header a {
-  color: #696969;
+  color: #fff;
 }
 #header a:hover {
-  color: #b0a0aa;
+  color: #eee;
 }
 #header .profilepic {
   text-align: center;
@@ -520,7 +523,7 @@ a {
 }
 #header .header-subtitle {
   text-align: center;
-  color: #999;
+  color: #fff;
   font-size: 14px;
   line-height: 25px;
   overflow: hidden;
@@ -623,11 +626,11 @@ a {
   border: 1px solid #cf5d0f;
 }
 #header .header-nav .social a.github {
-  background: url("/img/github.png") center no-repeat #afb6ca;
-  border: 1px solid #afb6ca;
+  background: url("/img/github.png") center no-repeat #34495e;
+  border: 1px solid #34495e;
 }
 #header .header-nav .social a.github:hover {
-  border: 1px solid #909ab6;
+  border: 1px solid #2c3e50;
 }
 #header .header-nav .social a.facebook {
   background: url("/img/facebook.png") center no-repeat #3b5998;
@@ -672,11 +675,11 @@ a {
   border: 1px solid #06c611;
 }
 #header .header-nav .social a.mail {
-  background: url("/img/mail.png") center no-repeat #005a87;
-  border: 1px solid #005a87;
+  background: url("/img/mail.png") center no-repeat #3498db;
+  border: 1px solid #3498db;
 }
 #header .header-nav .social a.mail:hover {
-  border: 1px solid #006b98;
+  border: 1px solid #2980b9;
 }
 #header .switch-part {
   width: 100%;
@@ -695,6 +698,7 @@ a {
 #header .switch-part3 {
   left: 200%;
   line-height: 30px;
+  color: #fff;
 }
 #header .switch-part3 .switch-friends-link {
   margin-right: 9px;
@@ -924,7 +928,7 @@ a {
   color: #c8c8c8;
 }
 .article-title {
-  color: #696969;
+  color: #1abc9c;
   margin-left: 0px;
   font-weight: 300;
   line-height: 35px;
@@ -939,14 +943,14 @@ a {
   transition: color 0.3s;
 }
 .article-title:hover {
-  color: #b0a0aa;
+  color: #16a085;
 }
 .article-inner {
   position: relative;
   margin-bottom: 20px;
 }
 .article-header {
-  border-left: 5px solid;
+  border-left: 5px solid #34495e;
   padding: 15px 0px 15px 25px;
 }
 .article-info.info-on-right {
@@ -975,11 +979,12 @@ a {
 .article-entry li code {
   padding: 1px 3px;
   margin: 0 3px;
-  background: #ddd;
-  border: 1px solid #ccc;
+  background: #95a5a6;
+  border: 1px solid #7f8c8d;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
   word-wrap: break-word;
   font-size: 14px;
+  color: #fff;
 }
 .article-entry blockquote {
   background: #ddd;
@@ -1838,7 +1843,7 @@ pre .css ~ * .id {
 .switch-btn .icon {
   height: 32px;
   width: 32px;
-  background: #cecece;
+  background: #fff;
   -webkit-border-radius: 100px;
   border-radius: 100px;
   position: relative;
