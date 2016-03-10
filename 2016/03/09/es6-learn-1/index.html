@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>es6学习笔记（一） | volodymyr前端</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###1. let  命令
-#####基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2">
+  <meta name="description" content="1. let  命令基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2
+不存在变量提升12">
 <meta property="og:type" content="article">
 <meta property="og:title" content="es6学习笔记（一）">
 <meta property="og:url" content="http://volodymyr-lian.github.io/2016/03/09/es6-learn-1/index.html">
 <meta property="og:site_name" content="volodymyr前端">
-<meta property="og:description" content="###1. let  命令
-#####基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2">
-<meta property="og:updated_time" content="2016-03-09T08:26:10.521Z">
+<meta property="og:description" content="1. let  命令基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2
+不存在变量提升12">
+<meta property="og:updated_time" content="2016-03-10T03:39:00.246Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="es6学习笔记（一）">
-<meta name="twitter:description" content="###1. let  命令
-#####基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2">
+<meta name="twitter:description" content="1. let  命令基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2
+不存在变量提升12">
   
   
     <link rel="icon" href="/img/g.gif">
@@ -210,19 +210,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###1. let  命令</p>
-<p>#####基本用法<br>  ES6新增 <code>let</code> 命令，用以声明变量。用法类似于 <code>var</code> ，但所声明的变量，仅在 <code>let</code> 所在的代码块内有效。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);   <span class="comment">//ReferenceError: a is not defined.</span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></p>
+        <h3 id="1-let-命令"><a href="#1-let-命令" class="headerlink" title="1. let  命令"></a>1. let  命令</h3><h5 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h5><p>  ES6新增 <code>let</code> 命令，用以声明变量。用法类似于 <code>var</code> ，但所声明的变量，仅在 <code>let</code> 所在的代码块内有效。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);   <span class="comment">//ReferenceError: a is not defined.</span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></p>
 <h5 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">//  ReferenceError</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
 <p>上面代码中，变量 <code>a</code> 用 <code>var</code> 声明，会发生变量提升，即在脚本开始运行时，变量 <code>a</code>就已经存在了，但是没有值，所以输出<code>undefined</code> 。 变量 <code>b</code> 用 <code>let</code> 声明，不存在变量提升，这表明在变量声明之前，变量 <code>b</code> 是不存在的，如果这时调用到变量<code>b</code>，则会抛出错误。</p>
 <h5 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h5><p>只要块级作用域内存在 <code>let</code> 命令，它所声明的变量就“绑定”这个区域，不再受外部的影响。<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">  a = <span class="number">2</span>;  <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>上面代码中，存在全局变量 <code>a</code> ，但是块级作用域内 <code>let</code> 又声明了一个局部变量 <code>a</code> ，导致后者绑定这个块级作用域，所以在 <code>let</code> 声明变量前，对 <code>a</code> 赋值会报错。<br>ES6明确规定，如果区域中存在 <code>let</code> 和 <code>const</code> 命令，这个区域对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。<br>在代码块内，使用   <code>let</code> 命令声明变量之前，该变量都是不可用的。在语法上，称为“暂时性死区（temporal dead zone，简称TDZ）”。</p>
 <hr>
 <hr>
-<p>###2. const 命令</p>
+<h3 id="2-const-命令"><a href="#2-const-命令" class="headerlink" title="2. const 命令"></a>2. const 命令</h3><hr>
 <hr>
-<hr>
-<p>###3. 块级作用域</p>
-<hr>
+<h3 id="3-块级作用域"><a href="#3-块级作用域" class="headerlink" title="3. 块级作用域"></a>3. 块级作用域</h3><hr>
 <hr>
 
       
