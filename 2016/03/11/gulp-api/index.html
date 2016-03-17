@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>gulp学习（一） API 说明 | volodymyr前端</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="gulp 是一款前端自动化构建工具，是自动化构建项目的利器，不仅能对网站资源进行优化，而且能够避免我们在开发过程中进行多次的重复任务，gulp 自动帮你完成！使用gulp 能大大的提高我们的开发效率！gulp 是基于 Nodejs的自动化构建工具，一般用于处理包括html/css/javascript/jade/less/sass/stylus/typescript/coffeescript/ES">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gulp学习（一） API 说明">
+<meta property="og:url" content="http://pengzhanbo.me/2016/03/11/gulp-api/index.html">
+<meta property="og:site_name" content="volodymyr前端">
+<meta property="og:description" content="gulp 是一款前端自动化构建工具，是自动化构建项目的利器，不仅能对网站资源进行优化，而且能够避免我们在开发过程中进行多次的重复任务，gulp 自动帮你完成！使用gulp 能大大的提高我们的开发效率！gulp 是基于 Nodejs的自动化构建工具，一般用于处理包括html/css/javascript/jade/less/sass/stylus/typescript/coffeescript/ES">
+<meta property="og:updated_time" content="2016-03-17T02:07:16.147Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gulp学习（一） API 说明">
+<meta name="twitter:description" content="gulp 是一款前端自动化构建工具，是自动化构建项目的利器，不仅能对网站资源进行优化，而且能够避免我们在开发过程中进行多次的重复任务，gulp 自动帮你完成！使用gulp 能大大的提高我们的开发效率！gulp 是基于 Nodejs的自动化构建工具，一般用于处理包括html/css/javascript/jade/less/sass/stylus/typescript/coffeescript/ES">
+  
+  
+    <link rel="icon" href="/img/g.gif">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/g.gif" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">volodymyr</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">爱好前端，兴趣广泛</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/volodymyr-lian" title="github">github</a>
+					        
+								<a class="mail" target="_blank" href="mailto://volodymyr@foxmail.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/es6/" style="font-size: 15px;">es6</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/笔记/" style="font-size: 20px;">笔记</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">时间，承诺，原则</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">volodymyr</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/g.gif" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">volodymyr</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">爱好前端，兴趣广泛</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/volodymyr-lian" title="github">github</a>
+			        
+						<a class="mail" target="_blank" href="mailto://volodymyr@foxmail.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-gulp-api" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/11/gulp-api/" class="article-date">
+  	<time datetime="2016-03-11T03:35:54.000Z" itemprop="datePublished">2016-03-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gulp学习（一） API 说明
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gulp/">gulp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>gulp</code> 是一款前端自动化构建工具，是自动化构建项目的利器，不仅能对网站资源进行优化，而且能够避免我们在开发过程中进行多次的重复任务，<code>gulp</code> 自动帮你完成！<br>使用<code>gulp</code> 能大大的提高我们的开发效率！<br><code>gulp</code> 是基于 Nodejs的自动化构建工具，一般用于处理包括<code>html/css/javascript/jade/less/sass/stylus/typescript/coffeescript/ES6/images</code> 等资源文件的测试、检查、合并、压缩、格式化、浏览器自动刷新，部署文件生成，监听文件变动 等一系列任务。<br>本文将针对 <code>gulp</code> 的API进行简单说明。<br><a id="more"></a></p>
+<h3 id="1-gulp-src-globs-option"><a href="#1-gulp-src-globs-option" class="headerlink" title="1. gulp.src(globs[,option])"></a>1. gulp.src(globs[,option])</h3><p><code>src</code> 方法指定的需要处理的源文件的路径，<code>gulp.src</code> 返回的当前文件流可通过管道 <code>pipe</code> 往下一级传入。<br> <strong>@param globs</strong><br> _需要处理的源文件匹配符路径。类型<em>String,Array</em>必填<em><br> <code>src/a.js</code> : 指定具体的文件<br> <code>*</code> : 匹配所有的文件 例: <code>src/*.html</code> 匹配<code>src</code> 路径下所有html文件(不包含子文件夹内的html文件)<br> <code>**</code>: 匹配0个或多个子文件夹，包括当前层级的文件夹 例: <code>src/**/*.js</code> 匹配<code>src</code>路径下包括所有子文件夹中的所有 js文件<br> <code>{}</code>: 匹配多个属性 例: <code>src/{a,b}.js</code> 匹配src路径下的a.js和b.js<br> <code>!</code> : 排除文件 例: <code>!src/a.js</code> 不包含 src/a.js 文件<br><strong>@param option</strong>
+</em>可选。包含3个属性值buffer、read、base_<br><code>option.buffer</code>:类型<em>Boolean</em> 默认:<em>true</em> 设置为false,将返回file.content的流并且不缓冲文件，处理大文件时非常有用；<br><code>option.read</code>:类型<em>Boolean</em> 默认:<em>true</em> 设置false，将不执行读取文件操作，返回null；<br><code>option.base</code>:类型<em>String</em> 设置输出路径以某个路径的某个组成部分为基础向后拼接。<br><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gulp.src(<span class="string">'src/js/**/*.js'</span>)</span><br><span class="line">.pipe(minify())</span><br><span class="line">.pipe(gulp.dest(<span class="string">'dest'</span>));  <span class="comment">// writes dest/somedir/somefile.js</span></span><br><span class="line"></span><br><span class="line">gulp.src(<span class="string">'src/js/**/*.js'</span>,&#123;base:'src'&#125;)</span><br><span class="line">.pipe(minify())</span><br><span class="line">.pipe(gulp.dest('dest'));  <span class="comment">// writes dest/js/somedir/somefile.js</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="2-gulp-dest-paths-options"><a href="#2-gulp-dest-paths-options" class="headerlink" title="2. gulp.dest(paths[,options])"></a>2. gulp.dest(paths[,options])</h3><p><code>dest</code> 方法指定的处理后的文件的输出路径<br><strong>@param paths</strong><br><em>指定文件输出路径，也可以定义函数返回输出路径 必填</em><br><strong>@param options</strong><br><em>可选。包含2个属性 cwd、mode</em><br><code>options.cwd</code> : 类型<em>String</em> 默认：process.cwd()：前脚本的工作目录的路径 当文件输出路径为相对路径将会用到<br><code>option.mode</code> : 类型<em>String</em> 0777 指定被创建文件夹的权限；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gulp.src(<span class="string">'src/js/**/*.js'</span>)</span><br><span class="line">.dest(<span class="string">'dest'</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="3-gulp-task-name-deps-callback"><a href="#3-gulp-task-name-deps-callback" class="headerlink" title="3. gulp.task(name[,deps],callback)"></a>3. gulp.task(name[,deps],callback)</h3><p>task 定义一个gulp任务<br><strong>@param name</strong><br>指定任务的名称。类型：String<br><strong>@param deps</strong><br>指定任务的依赖的任务（被依赖的任务应该返回文件流）类型：String/Array 可选<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(<span class="string">'less'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'src/**/*.less'</span>)  <span class="comment">//被依赖的任务，应该返回文件流</span></span><br><span class="line">  .pipe(less())</span><br><span class="line">  .pipe(gulp.dest(<span class="string">'dest'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(<span class="string">'css'</span>,<span class="string">'less'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  gulp.src(<span class="string">'src/**/*.css'</span>)</span><br><span class="line">  .pipe(minify())</span><br><span class="line">  .pipe(gulp.dest(<span class="string">'dest'</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>@param callback<br>该任务调用的文件处理操作 必选</p>
+<h3 id="4-gulp-watch-glob-opts-tasks-或-gulp-watch-glob-opts-callback"><a href="#4-gulp-watch-glob-opts-tasks-或-gulp-watch-glob-opts-callback" class="headerlink" title="4. gulp.watch(glob [, opts], tasks) 或 gulp.watch(glob [, opts, callback__])"></a>4. gulp.watch(glob [, opts], tasks) 或 gulp.watch(glob [, opts, callback__])</h3><p>watch 方法用于监听文件变化，文件修改则触发执行相应的任务<br><strong>@param glob</strong><br>需要处理的源文件匹配符路径 必填 <em>String|Array</em><br><strong>@param opts</strong><br>可选 <em>Object</em>  <a href="https://github.com/shama/gaze" target="_blank" rel="external">https://github.com/shama/gaze</a><br><strong>@param tasks</strong><br>需要执行的任务的名称数组 必填 <em>String|Array</em><br><strong>@param callback</strong><br>每个文件变化执行的回调函数 选填 <em>Function</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> watcher = gulp.watch(<span class="string">'js/**/*.js'</span>, [<span class="string">'uglify'</span>,<span class="string">'reload'</span>]);</span><br><span class="line">watcher.on(<span class="string">'change'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'File '</span> + event.path + <span class="string">' was '</span> + event.type + <span class="string">', running tasks...'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.watch(<span class="string">'js/**/*.js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'File '</span> + event.path + <span class="string">' was '</span> + event.type + <span class="string">', running tasks...'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/09/es6-learn-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">es6学习笔记（二）——变量的解构赋值</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="gulp-api" data-title="gulp学习（一） API 说明" data-url="http://pengzhanbo.me/2016/03/11/gulp-api/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"lianzhanpeng"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 volodymyr
+    	</div>
+<!--
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+-->
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
