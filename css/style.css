@@ -879,6 +879,9 @@ a {
 .article img {
   max-width: 100%;
 }
+.share_jia {
+  padding-left: 30px;
+}
 @-webkit-keyframes cd-bounce-1 {
   0% {
     opacity: 0;
