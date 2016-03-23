@@ -1035,20 +1035,22 @@ a {
 }
 .article-entry h2 {
   margin-top: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #574c4c;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
+  font-size: 1.3em;
 }
 .article-entry h3,
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
   margin-top: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #574c4c;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
+  font-size: 1.2em;
 }
 .article-entry video {
   max-width: 100%;
