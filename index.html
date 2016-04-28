@@ -9,7 +9,7 @@
   <meta name="description" content="volodymyr的前端博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="volodymyr前端">
-<meta property="og:url" content="http://volodymyr-lian.github.io/index.html">
+<meta property="og:url" content="http://pengzhanbo.me/index.html">
 <meta property="og:site_name" content="volodymyr前端">
 <meta property="og:description" content="volodymyr的前端博客">
 <meta name="twitter:card" content="summary">
@@ -20,12 +20,23 @@
     <link rel="icon" href="/img/g.gif">
   
   <link rel="stylesheet" href="/css/style.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?6a96c9f55f0db0c00b1c5633c340c3c0";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 </head>
 
 <body>
   <div id="container">
     <div class="left-col">
-    <div class="overlay"></div>
+    <div class="overlay">
+</div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -54,6 +65,11 @@
 							<div class="ribbon"></div>
 						</div>
 						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
 						
 						<div class="icon-wrap icon-me hide" data-idx="3">
 							<div class="user"></div>
@@ -66,11 +82,13 @@
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
-						<li>Menu</li>
-						<li>Tags</li>
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
 						
 						
-						<li>About</li>
+						<li>关于我</li>
 						
 					</ul>
 				</div>
@@ -86,8 +104,6 @@
 							<li><a href="/">主页</a></li>
 				        
 							<li><a href="/archives">所有文章</a></li>
-				        
-							<li><a href="/tags/随笔">随笔</a></li>
 				        
 						</ul>
 					</nav>
@@ -105,16 +121,24 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/es6/" style="font-size: 10px;">es6</a>
+						<a href="/tags/es6/" style="font-size: 13.33px;">es6</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/笔记/" style="font-size: 16.67px;">笔记</a> <a href="/tags/设计/" style="font-size: 20px;">设计</a>
 					</div>
 				</section>
 				
 				
 				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://clearaki.com/">一霁楚秋</a>
+			        
+			        </div>
+				</section>
+				
 
 				
 				
-				<section class="switch-part switch-part3">
+				<section class="switch-part switch-part4">
 				
 					<div id="js-aboutme">时间，承诺，原则</div>
 				</section>
@@ -151,8 +175,6 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
-		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -171,11 +193,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-es6-learn-2" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-layout-Proximity" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/09/es6-learn-2/" class="article-date">
-  	<time datetime="2016-03-09T10:10:04.000Z" itemprop="datePublished">2016-03-09</time>
+      <a href="/2016/04/28/layout-Proximity/" class="article-date">
+  	<time datetime="2016-04-28T01:15:14.000Z" itemprop="datePublished">2016-04-28</time>
 </a>
     </div>
   
@@ -188,7 +210,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/09/es6-learn-2/">es6学习（二）</a>
+      <a class="article-title" href="/2016/04/28/layout-Proximity/">设计四大基本原则之亲密性</a>
     </h1>
   
 
@@ -197,7 +219,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="亲密性"><a href="#亲密性" class="headerlink" title="亲密性"></a>亲密性</h2><h3 id="Robin-亲密性原则"><a href="#Robin-亲密性原则" class="headerlink" title="Robin 亲密性原则"></a>Robin 亲密性原则</h3><p><strong>将相关的项组织在一起</strong>，移动这些项，使它们的物理位置相互靠近，这样一来，相关的项将被看作凝聚为一体的一个组，而不再是一堆彼此无关的片段。</p>
+<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>在一个页面上，物理位置的接近就意味着存在关联（实际生活也是如此）。</p>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>亲密性的根本目的就是实现 <strong>组织性</strong>。尽管其他原则也能达到这个目的，不过利用亲密性原则，只需简单地将相关元素分在一组简历更近的亲密性，就能自动地实现条理性和组织性。如果信息很有条例，将更容易被记住。此外还有一个很好的“副产品”，利用亲密性原则，还是可以使空白更美观很有条理。</p>
+<h3 id="如何实现"><a href="#如何实现" class="headerlink" title="如何实现"></a>如何实现</h3><p>微微眯起眼睛，统计你的眼睛停顿的次数来数一数页面上有多少个元素。如果页面上的项超过3~5个，就要看看那些鼓励的元素可以归在一组简历更近的亲密性，使之成为一个视觉单元。</p>
+<h3 id="要避免的问题"><a href="#要避免的问题" class="headerlink" title="要避免的问题"></a>要避免的问题</h3><ul>
+<li>不要仅仅因为有空白就把元素放在角落哦或中央。</li>
+<li>避免一个页面上有太多孤立的元素。</li>
+<li>不要在元素之间流出同样大小的空白，除非各组同属于一个子集。</li>
+<li>标题、子标题、图表标题、图片能否归入其相关材料？在这个问题上一定要非常清楚（哪怕只有一点含糊都要尽量避免）。在有亲密性的元    素之间建立关系。</li>
+<li>不同属一组的元素之间不要简历关系！如果元素彼此无关，要把它们分开。</li>
+</ul>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p> 如果多个项目相互之间存在很近的亲密性，它们将成为一个视觉单元，而不是多个鼓励的元素。彼此相关的项应当归在一组。要有意识地注意你是怎样阅读的，你的视线怎样移动：从哪里开始；沿着怎样的路径：到哪里结束；读完之后，接下来看哪里？整个过程应当是一个合理的过程，有确定的开始，而且要有确定的结束。</p>
+
       
     </div>
     
@@ -205,11 +239,455 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计/">设计</a></li></ul>
 	</div>
 
       
 
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-layout-Alignment" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/28/layout-Alignment/" class="article-date">
+  	<time datetime="2016-04-28T01:13:39.000Z" itemprop="datePublished">2016-04-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/28/layout-Alignment/">设计四大基本原则之对齐</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="对齐"><a href="#对齐" class="headerlink" title="对齐"></a>对齐</h2><h3 id="Robin对齐原则"><a href="#Robin对齐原则" class="headerlink" title="Robin对齐原则"></a>Robin对齐原则</h3><p>任何元素都不能在页面上随意安放。每一项都应当与页面上的某个内容存在某种视觉联系。</p>
+<blockquote>
+<p>如果页面上的一些项是对齐的，者会得到一个更内聚的单元。即使对齐的元素物理位置是彼此分离的，但在你眼里，它们之间也会有一条看不见的线把他们连载一起。尽管你可能通过分开放置某些元素来指示它们的联系（使用亲密性原则），但对齐原则很“神奇”，它会告诉读者，即使这些项并不靠近，但它们属于同一组。</p>
+</blockquote>
+<h3 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h3><p>找一条明确的对齐线，并坚持以它Wie基准。</p>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>对齐的根本目的是使页面<strong>统一而且有条理</strong>。其效果类似于把客厅里四处零落的洋娃娃捡起来，并把他们放在一个玩具箱中。<br>不论穿件精美的、正式的、有趣的还是严肃的外观，通常都可以利用一种明确的对齐来达到目的。</p>
+<h3 id="如何实现"><a href="#如何实现" class="headerlink" title="如何实现"></a>如何实现</h3><p>要特别注意元素放在哪里。应当总能在页面找出预知对齐的元素，尽管这两个对象的物理位置可能相聚很远。</p>
+<h3 id="要避免的问题"><a href="#要避免的问题" class="headerlink" title="要避免的问题"></a>要避免的问题</h3><ul>
+<li>要避免在页面页面上混合使用多重文本对齐方式。</li>
+<li>要着力避免居中对齐，除非你有意识地想要创建一种比较正式，稳重的表示。并不是完全杜绝使用居中对齐，有时可以友谊地选择这种对齐方式，但是不要把它多为默认选择。</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计/">设计</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-layout-Prpetition" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/28/layout-Prpetition/" class="article-date">
+  	<time datetime="2016-04-28T01:12:28.000Z" itemprop="datePublished">2016-04-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/28/layout-Prpetition/">设计四大基本原则之重复</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h2><h3 id="Robin-重复原则"><a href="#Robin-重复原则" class="headerlink" title="Robin 重复原则"></a>Robin 重复原则</h3><p> 设计的某些方面需要在整个作品中重复。</p>
+<p>###目的<br>重复的目的就是统一，并增强视觉效果。不要地府页面视觉效果的威力，如果一个作品看起来很有趣，它玩玩也更易于阅读。</p>
+<h3 id="如何实现"><a href="#如何实现" class="headerlink" title="如何实现"></a>如何实现</h3><p>重复可以认为是保持一致性，而且我相信你早已经这样做过。现在，需要把现有的一致性更向前推进一步。可不可以专门做一个图片设计，并且将某些一致元素（如标题）作为这个图片设计的一部分？在每个页面底部或每个标题下面使用一条祖先为1点的线吗？或者是不是使用一条更粗的线（4点），使重复元素显得更明显，更生动？<br>再看看有没有可能增加一些纯粹为建立重复而设计的元素。是不是有一个编号项列表？可不可以使用另外一种字体或逆序数字，然后怼出版物中的每一个编号列表都重复同样的处理？最初，可以只是找出现有的重复，然后将其加强。熟悉了这种思想后，再开始创建新的重复元素，来增强设计的效果并提高信息的清晰度。<br>重复就像是强调你的衣着。如果一味女士穿着意见可爱的黑色晚礼服，带着一顶别致的帽子，她可能会用红色高跟鞋、红色口红和一朵红色小花来突出她的晚礼服。</p>
+<h3 id="要避免的问题"><a href="#要避免的问题" class="headerlink" title="要避免的问题"></a>要避免的问题</h3><ul>
+<li>要避免太多地重复一个元素，重复太多会让人讨厌。要注意对比的价值。</li>
+</ul>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>设计中视觉元素的重复可以将作品中的各部分连在一起，从而统一并增强整个作品，否则部分知识彼此孤立的单元。重复不仅对只有一页的作品很有用，对于多页文档的设计更显重要。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计/">设计</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-layout-Contrast" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/28/layout-Contrast/" class="article-date">
+  	<time datetime="2016-04-28T01:11:31.000Z" itemprop="datePublished">2016-04-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/28/layout-Contrast/">设计四大基本原则之对比</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><h3 id="Robin对比原则"><a href="#Robin对比原则" class="headerlink" title="Robin对比原则"></a>Robin对比原则</h3><p>如果两个项不完全相同，就应当使之不同，而且应当是截然不同。</p>
+<blockquote>
+<p>想要实现有效的对比，对比就必须强烈。<strong>千万不要畏畏缩缩</strong>。</p>
+</blockquote>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>对比的根本目的有两个方面，这两个方面相辅相成，无法分开。一个目的是增强页面的效果，如果一个页面看起来很有意思，往往更有可读性。另一个目的是有足浴信息的组织。读者应当能立即了解信息以何种方式组织，以及从一项到另一项的逻辑流程。对比元素不能让读者混淆，也不能错误地强调重点。</p>
+<p>###如何实现<br>可以通过字体选择、线宽、颜色、形状、大小、空间等等来增加对比。增加对比很容易，途径有很多，这可能是增加视觉效果最有意思也最让人满意的方法了。重要的是：对比一定要强烈。</p>
+<h3 id="要避免的问题"><a href="#要避免的问题" class="headerlink" title="要避免的问题"></a>要避免的问题</h3><ul>
+<li>不要犹豫。如果你想形成对比，就加大力度。不要讲一种粗线与一种更粗的线进行对比。不要讲棕色文本和黑色交替简历对比。要避免使用两种或多种类似的字体。如果哥哥想不完全一样，干脆让他们截然不同！</li>
+</ul>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>在页面上增加对比能吸引人的眼球。我们的眼睛喜欢看到对比的事物。如果页面上放两个不完全相同的元素，它们就不能类似。要实现有效的对比，这两个元素必须截然不同。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计/">设计</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-layout-principle" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/28/layout-principle/" class="article-date">
+  	<time datetime="2016-04-28T01:09:48.000Z" itemprop="datePublished">2016-04-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/28/layout-principle/">设计四大基本原则</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="设计四大基本原则"><a href="#设计四大基本原则" class="headerlink" title="设计四大基本原则"></a>设计四大基本原则</h2><h3 id="一、对比-（Contrast）"><a href="#一、对比-（Contrast）" class="headerlink" title="一、对比 （Contrast）"></a>一、对比 （Contrast）</h3><p>   对比的基本思想是，要避免页面上的元素太过相似。如果元素（字体、颜色、大小、线宽、形状、空间等）不相同，那就干脆让它们 <strong>截然不同</strong> 。要让页面引人注目，对比通常是最重要的一个因素，正式他能使读者首先看这个页面。</p>
+<h3 id="二、重复-（Prpetition）"><a href="#二、重复-（Prpetition）" class="headerlink" title="二、重复 （Prpetition）"></a>二、重复 （Prpetition）</h3><p>让设计中的视觉要素在整个作品中重复出现。可以重复颜色、形状、材质、空间关系、线宽、字体、大小和图片，等等。这样一来，既能增加条理性，还可以加强统一性。</p>
+<h3 id="三、对齐-（Alignment）"><a href="#三、对齐-（Alignment）" class="headerlink" title="三、对齐 （Alignment）"></a>三、对齐 （Alignment）</h3><p>任何东西都不能在页面上随意安放。每个元素都应当与页面上的另一个元素有某种视觉联系。这样能建立一种清晰、精巧而且清爽的外观。</p>
+<h3 id="四、亲密性-（Proximity）"><a href="#四、亲密性-（Proximity）" class="headerlink" title="四、亲密性 （Proximity）"></a>四、亲密性 （Proximity）</h3><p>彼此相关的想应当靠近，归组在一起。如果多个项目相互之间存在很近的亲密性，它们就会成为一个视觉单元，而不是多个鼓励的元素。这样有助于组织信息，减少混乱，为读者提供清晰的结构。</p>
+<h3 id="关于设计"><a href="#关于设计" class="headerlink" title="关于设计"></a>关于设计</h3><h4 id="指导规则：-不要畏畏缩缩"><a href="#指导规则：-不要畏畏缩缩" class="headerlink" title="指导规则：  不要畏畏缩缩"></a>指导规则：  <strong>不要畏畏缩缩</strong></h4><ol>
+<li>不要害怕在设计中留有空白，这能让你的眼睛稍作休息。</li>
+<li>不要害怕设计是部队称的，使用非居中的格式，不居中往往能使效果更强烈。尽管不建议使用居中，不过有意这么做也无不可。</li>
+<li>不要害怕把单词设置得非常大或非常小，不用担心说话声太大或太小。在何事的场合这都是可以的。</li>
+<li>只要最后的结果能支持或强调你的设计或观点，不要害怕让图片太大或太小。</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/设计/">设计</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-es6-learn-3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/23/es6-learn-3/" class="article-date">
+  	<time datetime="2016-03-23T04:10:22.000Z" itemprop="datePublished">2016-03-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/23/es6-learn-3/">es6学习笔记（三）Set和Map数据结构</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Set：ES6提供了新的数据结构Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。</p>
+<p>Map：ES6提供了Map数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/23/es6-learn-3/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-es6-learn-2" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/14/es6-learn-2/" class="article-date">
+  	<time datetime="2016-03-14T10:10:04.000Z" itemprop="datePublished">2016-03-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/14/es6-learn-2/">es6学习笔记（二）——变量的解构赋值</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>继上一篇 <a href="/2016/03/09/es6-learn-1/">es6学习笔记（一）——变量的声明</a> 继续对 es6的学习进度做总结笔记。</p>
+<p>变量的解构赋值是ES6新增的语法特性。</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/14/es6-learn-2/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-gulp-api" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/11/gulp-api/" class="article-date">
+  	<time datetime="2016-03-11T03:35:54.000Z" itemprop="datePublished">2016-03-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/11/gulp-api/">gulp学习（一）—— API 说明</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>gulp</code> 是一款前端自动化构建工具，是自动化构建项目的利器，不仅能对网站资源进行优化，而且能够避免我们在开发过程中进行多次的重复任务，<code>gulp</code> 自动帮你完成！<br>使用<code>gulp</code> 能大大的提高我们的开发效率！<br><code>gulp</code> 是基于 Nodejs的自动化构建工具，一般用于处理包括<code>html/css/javascript/jade/less/sass/stylus/typescript/coffeescript/ES6/images</code> 等资源文件的测试、检查、合并、压缩、格式化、浏览器自动刷新，部署文件生成，监听文件变动 等一系列任务。<br>本文将针对 <code>gulp</code> 的API进行简单说明。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gulp/">gulp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/11/gulp-api/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -244,7 +722,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/09/es6-learn-1/">es6学习笔记（一）</a>
+      <a class="article-title" href="/2016/03/09/es6-learn-1/">es6学习笔记（一）——变量的声明</a>
     </h1>
   
 
@@ -253,21 +731,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###1. let  命令</p>
-<p>#####基本用法<br>  ES6新增 <code>let</code> 命令，用以声明变量。用法类似于 <code>var</code> ，但所声明的变量，仅在 <code>let</code> 所在的代码块内有效。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);   <span class="comment">//ReferenceError: a is not defined.</span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></p>
-<h5 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">//  ReferenceError</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-<p>上面代码中，变量 <code>a</code> 用 <code>var</code> 声明，会发生变量提升，即在脚本开始运行时，变量 <code>a</code>就已经存在了，但是没有值，所以输出<code>undefined</code> 。 变量 <code>b</code> 用 <code>let</code> 声明，不存在变量提升，这表明在变量声明之前，变量 <code>b</code> 是不存在的，如果这时调用到变量<code>b</code>，则会抛出错误。</p>
-<h5 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h5><p>只要块级作用域内存在 <code>let</code> 命令，它所声明的变量就“绑定”这个区域，不再受外部的影响。<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">  a = <span class="number">2</span>;  <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>上面代码中，存在全局变量 <code>a</code> ，但是块级作用域内 <code>let</code> 又声明了一个局部变量 <code>a</code> ，导致后者绑定这个块级作用域，所以在 <code>let</code> 声明变量前，对 <code>a</code> 赋值会报错。<br>ES6明确规定，如果区域中存在 <code>let</code> 和 <code>const</code> 命令，这个区域对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。<br>在代码块内，使用   <code>let</code> 命令声明变量之前，该变量都是不可用的。在语法上，称为“暂时性死区（temporal dead zone，简称TDZ）”。</p>
-<hr>
-<hr>
-<p>###2. const 命令</p>
-<hr>
-<hr>
-<p>###3. 块级作用域</p>
-<hr>
-<hr>
-
+        <p>学习es6也有一段时间，但一直没有去整理成相应的笔记做总结记录，这两天刚好用 <code>hexo</code> 搭建了一个个人博客，那么就开始做整理笔记吧！<br>
       
     </div>
     
@@ -275,72 +739,15 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
 	</div>
 
       
 
       
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/09/hello-world/" class="article-date">
-  	<time datetime="2016-03-09T03:46:10.088Z" itemprop="datePublished">2016-03-09</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
+        <p class="article-more-link">
+          <a  href="/2016/03/09/es6-learn-1/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

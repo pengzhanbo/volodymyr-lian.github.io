@@ -4,32 +4,40 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>es6学习笔记（一） | volodymyr前端</title>
+  <title>es6学习笔记（一）——变量的声明 | volodymyr前端</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###1. let  命令
-#####基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2">
+  <meta name="description" content="学习es6也有一段时间，但一直没有去整理成相应的笔记做总结记录，这两天刚好用 hexo 搭建了一个个人博客，那么就开始做整理笔记吧！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="es6学习笔记（一）">
-<meta property="og:url" content="http://volodymyr-lian.github.io/2016/03/09/es6-learn-1/index.html">
+<meta property="og:title" content="es6学习笔记（一）——变量的声明">
+<meta property="og:url" content="http://pengzhanbo.me/2016/03/09/es6-learn-1/index.html">
 <meta property="og:site_name" content="volodymyr前端">
-<meta property="og:description" content="###1. let  命令
-#####基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2">
-<meta property="og:updated_time" content="2016-03-09T08:26:10.521Z">
+<meta property="og:description" content="学习es6也有一段时间，但一直没有去整理成相应的笔记做总结记录，这两天刚好用 hexo 搭建了一个个人博客，那么就开始做整理笔记吧！">
+<meta property="og:updated_time" content="2016-03-17T13:49:07.503Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="es6学习笔记（一）">
-<meta name="twitter:description" content="###1. let  命令
-#####基本用法  ES6新增 let 命令，用以声明变量。用法类似于 var ，但所声明的变量，仅在 let 所在的代码块内有效。123456&amp;#123;   let a = 1;   var b = 2;&amp;#125;console.log(a);   //ReferenceError: a is not defined.console.log(b);  // 2">
+<meta name="twitter:title" content="es6学习笔记（一）——变量的声明">
+<meta name="twitter:description" content="学习es6也有一段时间，但一直没有去整理成相应的笔记做总结记录，这两天刚好用 hexo 搭建了一个个人博客，那么就开始做整理笔记吧！">
   
   
     <link rel="icon" href="/img/g.gif">
   
   <link rel="stylesheet" href="/css/style.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?6a96c9f55f0db0c00b1c5633c340c3c0";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 </head>
 
 <body>
   <div id="container">
     <div class="left-col">
-    <div class="overlay"></div>
+    <div class="overlay">
+</div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -58,6 +66,11 @@
 							<div class="ribbon"></div>
 						</div>
 						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
 						
 						<div class="icon-wrap icon-me hide" data-idx="3">
 							<div class="user"></div>
@@ -70,11 +83,13 @@
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
-						<li>Menu</li>
-						<li>Tags</li>
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
 						
 						
-						<li>About</li>
+						<li>关于我</li>
 						
 					</ul>
 				</div>
@@ -90,8 +105,6 @@
 							<li><a href="/">主页</a></li>
 				        
 							<li><a href="/archives">所有文章</a></li>
-				        
-							<li><a href="/tags/随笔">随笔</a></li>
 				        
 						</ul>
 					</nav>
@@ -109,16 +122,24 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/es6/" style="font-size: 10px;">es6</a>
+						<a href="/tags/es6/" style="font-size: 13.33px;">es6</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/笔记/" style="font-size: 16.67px;">笔记</a> <a href="/tags/设计/" style="font-size: 20px;">设计</a>
 					</div>
 				</section>
 				
 				
 				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://clearaki.com/">一霁楚秋</a>
+			        
+			        </div>
+				</section>
+				
 
 				
 				
-				<section class="switch-part switch-part3">
+				<section class="switch-part switch-part4">
 				
 					<div id="js-aboutme">时间，承诺，原则</div>
 				</section>
@@ -155,8 +176,6 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
-		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -190,7 +209,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      es6学习笔记（一）
+      es6学习笔记（一）——变量的声明
     </h1>
   
 
@@ -199,7 +218,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
 	</div>
 
         
@@ -210,19 +229,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###1. let  命令</p>
-<p>#####基本用法<br>  ES6新增 <code>let</code> 命令，用以声明变量。用法类似于 <code>var</code> ，但所声明的变量，仅在 <code>let</code> 所在的代码块内有效。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);   <span class="comment">//ReferenceError: a is not defined.</span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></p>
+        <p>学习es6也有一段时间，但一直没有去整理成相应的笔记做总结记录，这两天刚好用 <code>hexo</code> 搭建了一个个人博客，那么就开始做整理笔记吧！<br><a id="more"></a></p>
+<hr>
+<h3 id="1-let-命令"><a href="#1-let-命令" class="headerlink" title="1. let  命令"></a>1. let  命令</h3><h5 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h5><p>  ES6新增 <code>let</code> 命令，用以声明变量。用法类似于 <code>var</code> ，但所声明的变量，仅在 <code>let</code> 所在的代码块内有效。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);   <span class="comment">//ReferenceError: a is not defined.</span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></p>
 <h5 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">//  ReferenceError</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
 <p>上面代码中，变量 <code>a</code> 用 <code>var</code> 声明，会发生变量提升，即在脚本开始运行时，变量 <code>a</code>就已经存在了，但是没有值，所以输出<code>undefined</code> 。 变量 <code>b</code> 用 <code>let</code> 声明，不存在变量提升，这表明在变量声明之前，变量 <code>b</code> 是不存在的，如果这时调用到变量<code>b</code>，则会抛出错误。</p>
-<h5 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h5><p>只要块级作用域内存在 <code>let</code> 命令，它所声明的变量就“绑定”这个区域，不再受外部的影响。<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">  a = <span class="number">2</span>;  <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h5><p>只要块级作用域内存在 <code>let</code> 命令，它所声明的变量就“绑定”这个区域，不再受外部的影响。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">  a = <span class="number">2</span>;  <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>上面代码中，存在全局变量 <code>a</code> ，但是块级作用域内 <code>let</code> 又声明了一个局部变量 <code>a</code> ，导致后者绑定这个块级作用域，所以在 <code>let</code> 声明变量前，对 <code>a</code> 赋值会报错。<br>ES6明确规定，如果区域中存在 <code>let</code> 和 <code>const</code> 命令，这个区域对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。<br>在代码块内，使用   <code>let</code> 命令声明变量之前，该变量都是不可用的。在语法上，称为“暂时性死区（temporal dead zone，简称TDZ）”。</p>
 <hr>
+<p>ES6规定暂时性死区和不存在变量提升，主要是为了减少运行时错误，防止在变量声明前就使用这个变量，从而导致意料之外的行为。这样的错误在ES5中很常见，现在有了这种规定，避免此类错误就很容易了。</p>
 <hr>
-<p>###2. const 命令</p>
+<h4 id="不允许重复声明"><a href="#不允许重复声明" class="headerlink" title="不允许重复声明"></a>不允许重复声明</h4><p><code>let</code> 不允许在同一作用域内，重复声明同一个变量</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因此，不能在函数内部重新声明参数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">arg</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> arg;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//不会报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">arg</span>)</span>&#123;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> arg;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
+<h3 id="2-const-命令"><a href="#2-const-命令" class="headerlink" title="2. const 命令"></a>2. const 命令</h3><p><code>const</code> 声明的是常量，一旦声明，常量的值就不可改变。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> PI = <span class="number">3.14</span>;</span><br><span class="line"><span class="built_in">console</span>.log(PI);  <span class="comment">// 3.14</span></span><br><span class="line"></span><br><span class="line">PI=<span class="number">3</span>;  <span class="comment">//赋值无效，常规模式下不会报错</span></span><br></pre></td></tr></table></figure>
+<p><code>const</code> 声明的变量不得改变值，这意味着，一旦声明变量，就需要立刻给变量赋值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span></span><br><span class="line"><span class="keyword">const</span> a;   <span class="comment">// SyntaxError: missing = in const declaration</span></span><br></pre></td></tr></table></figure>
+<p><code>const</code> 声明的变量，在严格模式下，会报错，在常规模式下虽然不会报错，但之后也无法重新赋值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="number">1</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure>
+<p><code>const</code> 的作用域与 <code>let</code> 命令相同，只在声明的块级作用域内有效。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">const</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同样的，<code>const</code> 命令声明的变量也不存在变量提升，同样存在暂时性死区，只能在声明的位置后面使用该变量。<br><code>const</code> 声明的变量，也不可重复声明</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> a = <span class="number">2</span>;  <span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+<p>对于复合型的变量，变量名不指向数据，而是指向数据所在的地址。<code>const</code> 命令只是保证变量的指向的地址不变，并不保证该地址的数据不变，所以将一个对象声明为常量应该非常小心。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line">obj.name = <span class="string">"person"</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(obj.name);  <span class="comment">// person</span></span><br><span class="line">obj = &#123;&#125;;   <span class="comment">// TypeError: "obj" is read-only</span></span><br></pre></td></tr></table></figure>
+<p>在上面的代码中，常量 obj存储的是一个地址，这个地址指向的是一个对象。不可变的只是这个地址，即不能把<code>obj</code>指向另一个地址，而对象本身是可变的，所以依然可以为之添加属性。</p>
 <hr>
-<p>###3. 块级作用域</p>
-<hr>
+<h3 id="3-块级作用域"><a href="#3-块级作用域" class="headerlink" title="3. 块级作用域"></a>3. 块级作用域</h3><p><code>let</code> 命令实际为<code>JavaScript</code> 新增了块级作用域。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span>(<span class="number">1</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">console</span>.log(a);  <span class="comment">// 1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>该函数有两个代码块，并声明了变量 <code>a</code> ，运行后输出的结果是10，这表明的外层的代码块不受内层代码块的影响。<br>ES6允许块级作用域的任意嵌套</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123; <span class="keyword">let</span> a = <span class="number">1</span>;&#125;&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>在块级作用域中，外层无法获取到内层使用 <code>let</code>或<code>const</code>声明的变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123;</span><br><span class="line">  &#123; <span class="keyword">let</span> a = <span class="number">1</span>;&#125;</span><br><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">//报错</span></span><br><span class="line">&#125;&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>而随着块级作用域的出现，立即执行匿名函数（IIFE）不再有必要了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// IIFE</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> tmp = ...</span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"><span class="comment">//块级作用域</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">var</span> tmp = ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同时ES6规定，函数本身的作用域 ，在所在的块级作用域中。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span>(<span class="number">1</span>)&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  fn();   <span class="comment">//报错</span></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<p>在ES5中，在严格模式下，函数只能在顶层作用域和函数 内部声明，其他情况比如if，块，循环代码块的声明都会报错。</p>
 <hr>
 
       
@@ -233,20 +280,15 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/03/09/es6-learn-2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/11/gulp-api/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          es6学习（二）
+          gulp学习（一）—— API 说明
         
       </div>
     </a>
   
-  
-    <a href="/2016/03/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -257,7 +299,7 @@
 <div class="share_jia">
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<span class="jiathis_txt">分享到: &nbsp; </span>
 		<a class="jiathis_button_facebook"></a> 
     <a class="jiathis_button_twitter"></a>
     <a class="jiathis_button_plus"></a> 
@@ -279,7 +321,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="es6-learn-1" data-title="es6学习笔记（一）" data-url="http://volodymyr-lian.github.io/2016/03/09/es6-learn-1/"></div>
+	<div class="ds-thread" data-thread-key="es6-learn-1" data-title="es6学习笔记（一）——变量的声明" data-url="http://pengzhanbo.me/2016/03/09/es6-learn-1/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
