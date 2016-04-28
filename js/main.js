@@ -107,4 +107,5 @@ require([], function (){
 		$(".article a[href]").attr("target", "_blank")
 	}
 	
+	(function(){var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=9030201040275758798' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('body')[0];s.parentNode.insertBefore(bdcs, s);})();
 });
