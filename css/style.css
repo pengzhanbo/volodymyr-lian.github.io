@@ -202,15 +202,26 @@ a {
   display: none;
 }
 #container #mobile-nav .overlay {
-  height: 110px;
+  height: 240px;
   position: absolute;
   width: 100%;
   background: #16a085;
+  text-align: center;
 }
 #container #mobile-nav .overlay.fixed {
   position: fixed;
   height: 42px;
   z-index: 99;
+}
+#container #mobile-nav .overlay input {
+  margin-top: 60px;
+  height: 30px;
+  width: 80%;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: none;
+  padding: 0 15px;
+  outline: 0;
 }
 #container #mobile-nav .intrude-less {
   background: #1abc9c;
@@ -256,7 +267,7 @@ a {
 #container .left-col .intrude-less {
   width: 76%;
   text-align: center;
-  margin: 112px auto 0;
+  margin: 170px auto 0;
 }
 #container .mid-col {
   position: absolute;
